@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Page Layout</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "aside-left main aside-right"
+                "footer footer footer";
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: auto 1fr auto;
+            gap: 15px;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            grid-area: header;
+            background: #add8e6;
+            padding: 10px;
+            text-align: center;
+        }
+
+        aside.left {
+            grid-area: aside-left;
+            background: #f0e68c;
+            padding: 10px;
+        }
+
+        aside.right {
+            grid-area: aside-right;
+            background: #f0e68c;
+            padding: 10px;
+        }
+
+        main {
+            grid-area: main;
+            background: #ffffff;
+            padding: 10px;
+            height: 150px;
+        }
+
+        section {
+            background: #d3d3d3;
+            padding: 10px;
+            margin-bottom: 20px;
+            height: 120px;
+        }
+
+        article {
+            background: #c0c0c0;
+            padding: 30px;
+            height: 120px;
+        }
+
+        footer {
+            grid-area: footer;
+            background: #add8e6;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Heading
+    </header>
+    <aside class="left">
+        Aside
+    </aside>
+    <main>
+        <section>
+            Section
+        </section>
+        <div>
+
+        </div>
+        <article>
+            Article
+        </article>
+        <section>
+            Section
+        </section>
+        <div>
+    </main>
+    <aside class="right">
+        Aside
+    </aside>
+    <footer>
+        Footer (All rights @2025)
+    </footer>
+</body>
+
+</html>
